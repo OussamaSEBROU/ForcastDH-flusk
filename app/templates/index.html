@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <input type="file" id="custom-model" accept=".h5">
+    <button onclick="predict()">تنبؤ بالنموذج المدرب</button>
+    <button onclick="train()">تدريب نموذج جديد</button>
+
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>
